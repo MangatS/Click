@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/light_blue"
+    >
+
+<android.support.v7.widget.SearchView
+    android:layout_width="250dp"
+    android:layout_height="80dp"
+    android:layout_marginLeft="80dp"
+    android:id="@+id/search"
+    >
+</android.support.v7.widget.SearchView>
+    <ImageView
+        android:id="@+id/chatAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/chat_add"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/profile"
+        android:id="@+id/profile_pic"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/card_background"
+    />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:divider="@android:color/transparent"
+        android:id="@+id/list_of_user"
+       />
+
+</FrameLayout>
